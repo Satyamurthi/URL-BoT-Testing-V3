@@ -1,8 +1,8 @@
 import os
 
 class Config(object):
-    # get a token from https://chatbase.com
-    CHAT_BASE_TOKEN = os.environ.get("CHAT_BASE_TOKEN", "")
+    # get id from @MissRose_bot
+    ADMIN = int(os.environ.get("ADMIN", 1243382770))
     # get a token from @BotFather
     TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
     # The Telegram API things
@@ -36,3 +36,6 @@ class Config(object):
     PROCESS_MAX_TIMEOUT = 3600
     # watermark file
     DEF_WATER_MARK_FILE = ""
+    #Database Name MonGoDb
+    DB_NAME = os.environ.get("DB_NAME","")
+    DB_URL = os.environ.get("DB_URL","")
